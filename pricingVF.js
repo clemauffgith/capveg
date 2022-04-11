@@ -34,45 +34,43 @@ var coutEntLocU = new Array();
     coutEntLocU["daddyPlante"] = 4;
     coutEntLocU["giantPlante"] = 5; 
 
-// Variables des prix finaux ?? 
-var fullTotalPrice; 
-var prixEntretien; 
-var coutLocationPlantes; 
-var coutRempotageT; 
-
-// les valeurs Achat ou Achat Entretien sont les mêmes ==> Achat || AchatEntretien {}  // 
-// ELSE => Location 
 
 // Choix Offres :
 // Soit: Achat / AchatEtEntretien / Location => prix plantesU
 $(document).ready(function() {
     $('input:radio[name=selectedOffer]').on("keyup change", function() {
 
+
         if (this.value == 'Achat')  {
+            $("#prixPlantesT").text("Cout plantes avec pots HT :");
             document.getElementById('babyPlanteU').value = babyPlantePriceU["Achat"];
             document.getElementById('teenagePlanteU').value = teenagePlantePriceU["Achat"];
             document.getElementById('tombantePlanteU').value = tombantePlantePriceU["Achat"];
             document.getElementById('daddyPlanteU').value = daddyPlantePriceU["Achat"];
             document.getElementById('giantPlanteU').value = giantPlantePriceU["Achat"]; 
             document.getElementById('coutPlantes').style.display = "block"; 
-            document.getElementById('coutLoc').style.display = "none"; 
             document.getElementById('coutRempotage').style.display = "block"; 
-            document.getElementById('coutEnt').style.display = "none";
-            document.getElementById('coutPlantes').style.display = "none";
+            document.getElementById('coutEnt').style.display = "block";
+            document.getElementById('coutPlantes').style.display = "block";
+            calculatePricePots();
+            calculateTotalPrice();
         }
         else if (this.value == 'AchatEtEntretien') {
+            $("#prixPlantesT").text("Cout plantes avec pots HT :");
             document.getElementById('babyPlanteU').value = babyPlantePriceU["AchatEtEntretien"];
             document.getElementById('teenagePlanteU').value = teenagePlantePriceU["AchatEtEntretien"];
             document.getElementById('tombantePlanteU').value = tombantePlantePriceU["AchatEtEntretien"];
             document.getElementById('daddyPlanteU').value = daddyPlantePriceU["AchatEtEntretien"];
             document.getElementById('giantPlanteU').value = giantPlantePriceU["AchatEtEntretien"];
-            document.getElementById('coutPlantes').style.display = "none";  
+            document.getElementById('coutPlantes').style.display = "block";  
             document.getElementById('coutRempotage').style.display = "block"; 
-            document.getElementById('coutLoc').style.display = "block"; 
             document.getElementById('coutEnt').style.display = "block";
             document.getElementById('coutPlantes').style.display = "none";
+            calculatePricePots();
+            calculateTotalPrice();
             }        
         else {
+            $("#prixPlantesT").text("Cout location par mois : ");
             document.getElementById('babyPlanteU').value = babyPlantePriceU["Location"];
             document.getElementById('teenagePlanteU').value = teenagePlantePriceU["Location"];
             document.getElementById('tombantePlanteU').value = tombantePlantePriceU["Location"];
@@ -80,26 +78,29 @@ $(document).ready(function() {
             document.getElementById('giantPlanteU').value = giantPlantePriceU["Location"];  
             document.getElementById('coutPlantes').style.display = "none"; 
             document.getElementById('coutRempotage').style.display = "block"; 
-            document.getElementById('coutLoc').style.display = "block";
             document.getElementById('coutEnt').style.display = "block";  
-            document.getElementById('coutPlantes').style.display = "none";
+            calculatePricePots();
+            calculateTotalPrice();
             }
         })
 });
 
 // Choix Offres Pots => Ajout sur le prixPlantesU => prix plantesPots
 $(document).ready(function() {
-    $('input:radio[name=selectedPots]').on("keyup change" , function() {
+    $('input:radio[name=selectedPots]').on("keyup change", function() {
 
 
         if (this.value == 'TerreCuite') {
             if (document.getElementById('offerLocation').checked) {
+                $("#prixPlantesT").text("Cout location par mois : ");
                 document.getElementById('babyPlantePots').value = parseInt(document.getElementById('babyPlanteU').value) + 1;
                 document.getElementById('teenagePlantePots').value = parseInt(document.getElementById('teenagePlanteU').value) + 3;
                 document.getElementById('tombantePlantePots').value = parseInt(document.getElementById('tombantePlanteU').value) + 3; 
                 document.getElementById('daddyPlantePots').value = parseInt(document.getElementById('daddyPlanteU').value) + 4; 
                 document.getElementById('giantPlantePots').value = parseInt(document.getElementById('giantPlanteU').value) + 7;
                 document.getElementById('coutPlantes').style.display = "block";
+                calculatePricePots();
+                calculateTotalPrice();
             }
             else {
                 document.getElementById('babyPlantePots').value = parseInt(document.getElementById('babyPlanteU').value) + 8;
@@ -108,31 +109,37 @@ $(document).ready(function() {
                 document.getElementById('daddyPlantePots').value = parseInt(document.getElementById('daddyPlanteU').value) + 37;
                 document.getElementById('giantPlantePots').value = parseInt(document.getElementById('giantPlanteU').value) + 69; 
                 document.getElementById('coutPlantes').style.display = "block";
+                $("#prixPlantesT").text("Cout plantes avec pots HT :");
+                calculatePricePots();
+                calculateTotalPrice();
             }
         }
         else if (this.value == 'Reservoirdeau') {
 
             if (document.getElementById('offerLocation').checked)  {
+                $("#prixPlantesT").text("Cout location par mois : ");
                 document.getElementById('babyPlantePots').value = parseInt(document.getElementById('babyPlanteU').value) + 3;
                 document.getElementById('teenagePlantePots').value = parseInt(document.getElementById('teenagePlanteU').value) + 5;
                 document.getElementById('tombantePlantePots').value = parseInt(document.getElementById('tombantePlanteU').value) + 5; 
                 document.getElementById('daddyPlantePots').value = parseInt(document.getElementById('daddyPlanteU').value) + 5; 
                 document.getElementById('giantPlantePots').value = parseInt(document.getElementById('giantPlanteU').value) + 9;
                 document.getElementById('coutPlantes').style.display = "block";
+                calculatePricePots();
+                calculateTotalPrice();
             }
 
             else {
+                $("#prixPlantesT").text("Cout plantes avec pots HT :");
                 document.getElementById('babyPlantePots').value = parseInt(document.getElementById('babyPlanteU').value) + 28; 
                 document.getElementById('teenagePlantePots').value = parseInt(document.getElementById('teenagePlanteU').value) + 44;
                 document.getElementById('tombantePlantePots').value = parseInt(document.getElementById('tombantePlanteU').value) + 44;
                 document.getElementById('daddyPlantePots').value = parseInt(document.getElementById('daddyPlanteU').value) + 44;
                 document.getElementById('giantPlantePots').value = parseInt(document.getElementById('giantPlanteU').value) + 83; 
                 document.getElementById('coutPlantes').style.display = "block";
+                calculatePricePots();
+                calculateTotalPrice();
             }
         }    
-
-        calculatePricePots();
-        calculateTotalPrice();
     });
 });
 
@@ -180,7 +187,7 @@ function numberOfPlantes(){
     // Cout entretien Achat et Entretien : 
         var coutEntretien = 0;
             if (document.getElementById('offerAchatEntretien').checked) {
-                document.getElementById('coutEntretienT').value = (parseInt(nombreOfPlantes) + 20) * 2; 
+                document.getElementById('coutEntretienT').value = parseInt(nombreOfPlantes) + 30; 
                 coutEntretien = document.getElementById('coutEntretienT').value;
         }
 
@@ -188,35 +195,30 @@ function numberOfPlantes(){
 
     // Cout Entretien Location 
     if (document.getElementById('offerLocation').checked) {
-        var babyPlanteEntLoc = coutEntLocU["babyPlante"];
-        console.log("cout ent loc u " + babyPlanteEntLoc);
-        var teenagePlanteEntLoc = coutEntLocU["teenagePlante"];
-        var tombantePlanteEntLoc = coutEntLocU["tombantePlante"];
-        var daddyPlanteEntLoc = coutEntLocU["daddyPlante"];
-        var giantPlanteEntLoc = coutEntLocU["giantPlante"];
+        // var babyPlanteEntLoc = coutEntLocU["babyPlante"];
+        // console.log("cout ent loc u " + babyPlanteEntLoc);
+        // var teenagePlanteEntLoc = coutEntLocU["teenagePlante"];
+        // var tombantePlanteEntLoc = coutEntLocU["tombantePlante"];
+        // var daddyPlanteEntLoc = coutEntLocU["daddyPlante"];
+        // var giantPlanteEntLoc = coutEntLocU["giantPlante"];
 
-        var coutEntLocBaby = ($("#babyPlanteQty").val() * babyPlanteEntLoc);
-        var coutEntLocTeenage= ($("#teenagePlanteQty").val() * teenagePlanteEntLoc);  
-        var coutEntLocTombante = ($("#tombantePlanteQty").val() * tombantePlanteEntLoc); 
-        var coutEntLocdaddy = ($("#daddyPlanteQty").val() * daddyPlanteEntLoc); 
-        var coutEntLocGiant = ($("#giantPlanteQty").val() * giantPlanteEntLoc); 
+        // var coutEntLocBaby = ($("#babyPlanteQty").val() * babyPlanteEntLoc);
+        // var coutEntLocTeenage= ($("#teenagePlanteQty").val() * teenagePlanteEntLoc);  
+        // var coutEntLocTombante = ($("#tombantePlanteQty").val() * tombantePlanteEntLoc); 
+        // var coutEntLocdaddy = ($("#daddyPlanteQty").val() * daddyPlanteEntLoc); 
+        // var coutEntLocGiant = ($("#giantPlanteQty").val() * giantPlanteEntLoc); 
         
-        var coutEntLocTotal = coutEntLocBaby + coutEntLocTombante + coutEntLocTeenage + coutEntLocdaddy + coutEntLocGiant; 
-        document.getElementById('coutEntretienT').value = parseInt(coutEntLocTotal + 20) * 2; 
+        // var coutEntLocTotal = coutEntLocBaby + coutEntLocTombante + coutEntLocTeenage + coutEntLocdaddy + coutEntLocGiant; 
+        // document.getElementById('coutEntretienT').value = parseInt(coutEntLocTotal + 30); 
+        document.getElementById('coutEntretienT').value = parseInt(nombreOfPlantes) + 30; 
 
-        console.log('cout entretien location : ' + coutEntLocTotal);
+        // console.log('cout entretien location : ' + coutEntLocTotal);
     } 
 
     // ------------- calcul cout rempotage ------------------------ 
     var coutRempotage = 0; 
     coutRempotage = (parseInt(nombreOfPlantes) * 5);
     document.getElementById('coutRempotageT').value = coutRempotage;
-    // ------------- calcul cout location ------------------------ 
-    // var coutLocation = 0; 
-    // if(document.getElementById('offerLocation').checked) {
-    //     coutLocation = parseInt(nombreOfPlantes) + 40; 
-    // }
-    // document.getElementById('coutLocationT').value = coutLocation;
 }; 
 
 
@@ -254,23 +256,23 @@ function calculatePricePots() {
 
     
     document.getElementById('prixPlantesPots').value = totalPrixPots;
-    // $("#prixPlantesPots") = totalPrixPots;
 
     // Calcul cout installation ==> déterminé par le prix HT des pots     
         // Formule = si totalPrixPots > 1450 => 10% du total HT 
         // Si totalPrixPots < 1450 ==> 145euros d'Installation. 
         var coutInstallation = 0;
-        if($("#prixPlantesPots").val() < 1450) {
-            coutInstallation = 145;
-            // document.getElementById("coutInstallationT").value = coutInstallation; 
-            } else if ($("#prixPlantesPots").val() > 1450) {
-            coutInstallation = Math.round(($("#prixPlantesPots").val() * 10) / 100);
+        // if($("#prixPlantesPots").val() < 1450) {
+        //     coutInstallation = 145;
+        //     // document.getElementById("coutInstallationT").value = coutInstallation; 
+        //     } else if ($("#prixPlantesPots").val() > 1450) {
+        coutInstallation = Math.round(($("#prixPlantesPots").val() * 10) / 100);
             // document.getElementById("coutInstallationT").value = coutInstallation;
-            }
+            // }
         document.getElementById('coutInstallationT').value = coutInstallation; 
 
 }
 
+// Calcul du Cout Total 
 function calculateTotalPrice() {
     
     let totalPrices = {
@@ -279,24 +281,8 @@ function calculateTotalPrice() {
         livraison : 120,
         coutRempotage : parseInt(document.getElementById('coutRempotageT').value),
         coutInstallation : parseInt(document.getElementById('coutInstallationT').value), 
-
     };
     console.log('mon total prices : ' + totalPrices); 
-     
-    
-
-    // if($("input[name=selectedOffer]:checked").val() == "Achat") {
-    //     totalPricing = totalPrices.coutPlantesPots + totalPrices.LivraisonInstallation;
-    //     document.getElementById('totalPrice').value = totalPricing;
-    // }
-    //  else if ($("input[name=selectedOffer]:checked").val() == "Achat&Entretien") {
-    //     totalPricing = totalPrices.coutEntretien + totalPrices.coutPlantesPots + totalPrices.LivraisonInstallation;
-    //     document.getElementById('totalPrice').value = totalPricing;
-    // }
-    // else if ($("input[name=selectedOffer]:checked").val() == "Location") {
-    //     totalPricing = totalPrices.coutPlantesPots + totalPrices.coutRempotage + totalPrices.coutLocation + totalPrices.LivraisonInstallation;
-        
-    // }
 
     let totalPricing = totalPrices.coutEntretien + totalPrices.coutPlantesPots + totalPrices.livraison + totalPrices.coutRempotage + totalPrices.coutInstallation;
 
@@ -312,7 +298,6 @@ $(function() {
     $(".qty").on("change keyup", calculateTotalPrice);
 
     // $('input:radio[name=selectedPots]' || 'input:radio[name=selectedOffer]').on("change keyup", calculateTotalPrice);
-
 })
 
 $(function()
@@ -321,8 +306,93 @@ $(function()
 })
 
 
+// Partie formulaire + swal alert 
+      
+      // informations présentes dans le formulaire de contact
+      var contactForm = document.getElementById('testForm'); 
+      var firstName = document.getElementById('firstName');
+      var companyName = document.getElementById('companyName'); 
+      var phoneNumber = document.getElementById('phoneNumber'); 
+      var email = document.getElementById('email'); 
+      var submitButton = document.getElementById('submitButton');
 
+      // variable de l'offre selectionnée qui ira dans le sheet 
+      var offreSelectionnee; 
 
+      $(document).ready(function() {
+        $('input:radio[name=selectedOffer]').on("keyup change", function() {
 
+          if (this.value == 'Achat') {
+            offreSelectionnee = 'Achat';
+          }
+          else if (this.value == 'AchatEtEntretien') {
+            offreSelectionnee = 'AchatEtEntretien';
+          }
+          else {
+            offreSelectionnee = 'Location';
+          }
+        }
+      )});
 
+      var nbPlantes = document.getElementById('totalPlanteQty');
+      var nbBabyPlantes = document.getElementById('babyPlanteQty');
+      var nbTeenagePlantes = document.getElementById('teenagePlanteQty');
+      var nbTombantePlantes = document.getElementById('tombantePlanteQty');
+      var nbDaddyPlantes = document.getElementById('daddyPlanteQty');
+      var nbGiantPlantes = document.getElementById('giantPlanteQty');
+      var montant = document.getElementById('totalPrice'); 
 
+function afterSubmit(e) {
+  e.preventDefault(); 
+
+  var infoClient = {
+      name : firstName.value,
+      companyName : companyName.value,
+      telephone : phoneNumber.value,
+      emailAdress : email.value,
+      choixOffre : offreSelectionnee,
+      montant : montant.value,
+      nbPlantes : nbPlantes.value,
+      qtyOfBabyPlantes : nbBabyPlantes.value,
+      qtyOfTeenagePlantes : nbTeenagePlantes.value,
+      qtyOfTombantePlantes : nbTombantePlantes.value,
+      qtyOfDaddyPlantes : nbDaddyPlantes.value,
+      qtyOfGiantPlantes : nbGiantPlantes.value
+  };
+
+  var url = "https://script.google.com/macros/s/AKfycbxfNvhj1owoM-3A6aH6NBYoouVW3wyS3QQRaNlJGezTvYNflrE/exec";
+  
+  fetch(url, {
+      method: 'POST',
+      cache: 'no-cache',
+      mode: 'no-cors',
+      redirect: 'follow',
+      body: JSON.stringify(infoClient)
+  })
+  .then(res => res.json())
+  .then(res => {
+      console.log(res);
+      finalForm.reset();
+  })
+  .catch(err => {
+      console.log(err);
+      contactForm.reset();
+      console.log('something went wrong ....');
+  });
+
+};
+
+contactForm.addEventListener("submit", afterSubmit);
+
+contactForm.addEventListener("submit", function(){
+        Swal.fire({
+        width: 400,
+        padding: '3em',
+        color: '#416a5a',
+        title: 'Merci !',
+        html: 'Vous serez recontactez rapidement par nos équipes!',
+        icon: 'success',
+        confirmButtonColor:'#416a5a',
+        confirmButtonText: 'Valider'
+    })
+})

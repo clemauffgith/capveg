@@ -123,7 +123,7 @@
   
   /* style boxes choix des offres + choix nbre plantes */ 
   .choice-boxes, .choice-plants {
-      width: 550px;
+      width: 520px;
       font-family: 'Work Sans', sans-serif;
       padding-top: 25px;
       padding-bottom: 40px;
@@ -131,6 +131,7 @@
       background-color: white;
       box-shadow: 1px 1px 8px 0 #ebecf0;
       margin-right: 20px;
+      padding-right: 10px;
   }
 
   .infoRow {

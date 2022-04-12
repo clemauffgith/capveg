@@ -475,7 +475,7 @@ input[type="text"]:active {
   .quantity.buttons_added .minus,
   .quantity.buttons_added .plus {
    padding: 7px 10px 8px;
-   height: 43px;
+   height: 41px;
    background-color: #ffffff;
    border: 1px solid #efefef;
    cursor:pointer;}

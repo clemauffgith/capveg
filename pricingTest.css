@@ -124,7 +124,7 @@
       width: 520px;
       font-family: 'Work Sans', sans-serif;
       padding-top: 25px;
-      padding-bottom: 40px;
+      padding-bottom: 30px;
       border-radius: 20px;
       background-color: white;
       box-shadow: 1px 1px 8px 0 #ebecf0;
@@ -203,7 +203,7 @@
   
   /* style box nombres */ 
   .total-numbers {
-    width: 515px;
+    width: 520px;
       padding-left: 40px;
       padding-top: 20px;     
       font-family: 'Work Sans', sans-serif;

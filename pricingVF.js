@@ -48,7 +48,7 @@ $(document).ready(function() {
             document.getElementById('tombantePlanteU').value = tombantePlantePriceU["Achat"];
             document.getElementById('daddyPlanteU').value = daddyPlantePriceU["Achat"];
             document.getElementById('giantPlanteU').value = giantPlantePriceU["Achat"]; 
-            document.getElementById('coutPlantes').style.display = "block"; 
+            document.getElementById('coutPlantes').style.display = "none"; 
             document.getElementById('coutRempotage').style.display = "block"; 
             document.getElementById('coutEnt').style.display = "block";
             document.getElementById('coutPlantes').style.display = "block";
@@ -62,7 +62,7 @@ $(document).ready(function() {
             document.getElementById('tombantePlanteU').value = tombantePlantePriceU["AchatEtEntretien"];
             document.getElementById('daddyPlanteU').value = daddyPlantePriceU["AchatEtEntretien"];
             document.getElementById('giantPlanteU').value = giantPlantePriceU["AchatEtEntretien"];
-            document.getElementById('coutPlantes').style.display = "block";  
+            document.getElementById('coutPlantes').style.display = "none";  
             document.getElementById('coutRempotage').style.display = "block"; 
             document.getElementById('coutEnt').style.display = "block";
             document.getElementById('coutPlantes').style.display = "none";

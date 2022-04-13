@@ -121,7 +121,7 @@
   
   /* style boxes choix des offres + choix nbre plantes */ 
   .choice-boxes, .choice-plants {
-      width: 520px;
+      width: 49%;
       font-family: 'Work Sans', sans-serif;
       padding-top: 25px;
       padding-bottom: 30px;
@@ -172,6 +172,7 @@
     font-family: 'Work Sans', sans-serif;
     font-weight: normal;
       margin-right: 10px;
+    color: #426a5a; 
   }
   
   .choice-plants .inputQty {
@@ -181,6 +182,7 @@
       font-size: 15px;
       height: 28px;
       width: 80px;
+      color: #426a5a; 
   }
   
   .choice-plants h5 {
@@ -197,7 +199,7 @@
   }
 
   .choixPlantes {
-    padding-left: 40px;
+    padding-left: 30px;
   }
   
   

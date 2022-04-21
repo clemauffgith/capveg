@@ -1032,9 +1032,15 @@ input[type="text"]:active {
         align-items: center; 
         flex-direction: row;
         margin-bottom: 10px;
-        border-bottom: 3px solid #f9dd94;
       }
-      
+  
+      .divTotalTypes label {
+        position: relative;
+        border-bottom: 3px solid #f9dd94;
+        padding-bottom: 4px;
+        display: inline;
+      }
+ 
       /* style du formulaire de contact */ 
       .contact-form {
         width: 100%;

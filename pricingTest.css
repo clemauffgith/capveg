@@ -884,8 +884,8 @@ input[type="text"]:active {
           padding-bottom: 100px;
           padding-top: 20px;
           background-color: #416a5a;
-          padding-left: 5%;
-          padding-right: 5%;
+          padding-left: 2%;
+          padding-right: 2%;
       }
 
       #theForm {
@@ -907,7 +907,7 @@ input[type="text"]:active {
       
       /* style boxes choix des offres + choix nbre plantes */ 
       .choice-boxes, .choice-plants {
-          width: 41vh;
+          width: 100%;
           font-family: 'Work Sans', sans-serif;
           padding: 5%;
           border-radius: 20px;
@@ -947,7 +947,7 @@ input[type="text"]:active {
         background: transparent;
         font-size: 12px;
         font-family: 'Work Sans', sans-serif;
-        width: 18px;
+        width: 30px;
         margin-right: 4px;
         padding-bottom: 10%;
         color: #416a5a; 
@@ -994,7 +994,7 @@ input[type="text"]:active {
       
       /* style box nombres */ 
       .total-numbers {
-        width: 39vh;
+        width: 100%;
         padding: 20px 20px;
           margin-top: 20px;
           font-family: 'Work Sans', sans-serif;
@@ -1102,6 +1102,7 @@ input[type="text"]:active {
            #wrap .buttonsOffer {
               flex-direction: column !important; 
              align-items: center !important; 
+             padding-left: 0px !important; 
           }
   
           #wrap .button-56 {
@@ -1110,15 +1111,15 @@ input[type="text"]:active {
               font-family: 'Work Sans', sans-serif;
               font-weight: 600;
               font-size: 12px;
-              padding-top: 10px;
-              padding-left: 15px;
-              padding-bottom: 10px;
-              padding-right: 15px;
+              padding-top: 5px;
+              padding-left: 10px;
+              padding-bottom: 5px;
+              padding-right: 10px;
               border-radius: 10px;
               color: white;
               border: none;
               cursor: pointer;
-              width: 40%;
+              width: 35%;
           }
       
        /* style inputs offres et pots */  

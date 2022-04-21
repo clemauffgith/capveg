@@ -1,7 +1,7 @@
 
 /* STYLE VERSION DESKTOP */ 
 /* wrap général */ 
-@media (min-width: 1100px) {
+@media (min-width: 1023px) {
   :root {
     --surface-color: #ACECA1;
     --curve: 40;
@@ -504,7 +504,7 @@ input[type="text"]:active {
 }
 
 /* Version iPad  max width 1100px */ 
-@media (min-width: 760px) and (max-width: 1100px) {
+@media (min-width: 760px) and (max-width: 1022px) {
     #wrap{
         font-family:'Open Sans', sans-serif;
           padding-bottom: 100px;

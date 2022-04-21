@@ -1177,7 +1177,7 @@ input[type="text"]:active {
       
       .quantity .input-text.qty {
        width: 25px;
-       height: 23px;
+       height: 30px;
        padding: 0 5px;
        font-size: 12px;
        font-family: 'Work Sans', sans-serif;
@@ -1201,8 +1201,8 @@ input[type="text"]:active {
       
       .quantity.buttons_added .minus,
       .quantity.buttons_added .plus {
-       padding: 0 4px;
-       height: 23px;
+       padding: 0 5px;
+       height: 30px;
        background-color: #ffffff;
        border: 1px solid #efefef;
        cursor:pointer;}

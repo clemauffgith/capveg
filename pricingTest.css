@@ -1037,7 +1037,7 @@ input[type="text"]:active {
       
       /* style du formulaire de contact */ 
       .contact-form {
-        width: 41vh;
+        width: 100%;
           padding : 5%;
           background-color: white;
           border-radius: 20px;
@@ -1111,10 +1111,10 @@ input[type="text"]:active {
               font-family: 'Work Sans', sans-serif;
               font-weight: 600;
               font-size: 12px;
-              padding-top: 5px;
-              padding-left: 10px;
-              padding-bottom: 5px;
-              padding-right: 10px;
+              padding-top: 10px;
+              padding-left: 15px;
+              padding-bottom: 10px;
+              padding-right: 15px;
               border-radius: 10px;
               color: white;
               border: none;

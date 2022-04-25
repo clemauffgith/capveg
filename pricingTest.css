@@ -952,10 +952,6 @@ input[type="text"]:active {
         font-weight: 600; 
       }
 
-      .choixPlantes {
-        padding-left: 1px;
-      }
-      
       .choice-plants .plantsRow {
           display:flex; flex-direction: row;align-items: center;
       }
@@ -989,17 +985,21 @@ input[type="text"]:active {
       .choice-plants .inputRow {
           display:flex; flex-direction: row; align-items: center;
       }
-      
+  
+      .choixPlantes {
+        padding-left: 5%;
+      }
       
       /* style box nombres */ 
       .total-numbers {
         width: 100%;
-        padding: 20px 20px;
-          margin-top: 20px;
-          font-family: 'Work Sans', sans-serif;
-          background-color: white;
-          border-radius: 20px;
-          box-shadow: 1px 1px 5px 0 #ebecf0;    
+        padding-top: 20px;
+        padding-left: 5%; 
+        margin-top: 20px;
+        font-family: 'Work Sans', sans-serif;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 1px 1px 5px 0 #ebecf0;    
       }
       
       .total-numbers input {

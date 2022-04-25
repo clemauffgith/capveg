@@ -1048,6 +1048,11 @@ input[type="text"]:active {
         position: relative;
         font-size: 16px;
       }
+  
+  #divPriceTotal input {
+       font-size: 16px;
+       font-weight: 700;
+  }
 
       #divPriceTotal label::before {
         content: "";
@@ -1077,11 +1082,11 @@ input[type="text"]:active {
       }
 
       .contact-form label {
-        font-size: 11px;
+        font-size: 13px;
         font-weight: normal; 
         font-family: 'Work Sans'; 
         color: #416a5a; 
-        margin-bottom: 2px !important;
+        margin-bottom: 0px !important;
       }
      
       .contact-form h3 {
@@ -1091,6 +1096,10 @@ input[type="text"]:active {
           margin : 5px !important;
           color: #426a5a;
           text-transform: uppercase;
+      }
+  
+      #testForm {
+          padding-left: 8%; 
       }
 
       /* style label des boutons radios offre & Pots */ 
@@ -1130,20 +1139,17 @@ input[type="text"]:active {
           }
   
           #wrap .button-56 {
-              margin-top: 10px;
               background-color: #eca72c;
               font-family: 'Work Sans', sans-serif;
               font-weight: 600;
               font-size: 12px;
               padding-top: 10px;
-              padding-left: 15px;
               padding-bottom: 10px;
-              padding-right: 15px;
-              border-radius: 10px;
+              border-radius: 6px;
               color: white;
               border: none;
               cursor: pointer;
-              width: 35%;
+              width: 30%;
           }
       
        /* style inputs offres et pots */  
@@ -1160,8 +1166,8 @@ input[type="text"]:active {
          input[type="text"] {
                   border: 1px solid #E5E6E5;
                   font-family: 'Open Sans', sans-serif;
-                  height: 23px;
-                  font-size: 10px;
+                  height: 28px;
+                  font-size: 13px;
                   border-radius: 6px;
               }	
           
@@ -1169,6 +1175,7 @@ input[type="text"]:active {
               outline:none !important;
               border-bottom: 2px solid #63cf99;
               color: #63cf99;
+              font-size: 13px; 
           }	
       
       

@@ -1167,6 +1167,7 @@ input[type="text"]:active {
                   font-size: 13px;
                   border-radius: 6px;
                   margin-bottom: 5px; 
+                  width: 75%; 
               }	
           
           #wrap input[type="text"]:focus {

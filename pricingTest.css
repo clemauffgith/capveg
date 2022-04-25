@@ -931,10 +931,11 @@ input[type="text"]:active {
           font-family: 'Work Sans', sans-serif;
           font-size: 13px;
           margin-top: 0px !important;
-          font-weight: 600;
+          font-weight: 700;
           color: #426a5a;
           line-height: 18px !important;
-          margin-top: 10px;
+          padding-top: 10px; 
+          margin-bottom: 5px;
       }
       
       .choice-boxes:hover, .choice-plants:hover {
@@ -1045,16 +1046,16 @@ input[type="text"]:active {
   
         #divPriceTotal label {
         position: relative;
-        font-size: 14px;
+        font-size: 16px;
       }
 
       #divPriceTotal label::before {
         content: "";
         position: absolute;
-        left: 65px;
-        bottom: -5px;
-        width: 135px;
-        height: 12px;
+        left: 45px;
+        bottom: -4px;
+        width: 90px;
+        height: 8px;
         transform: skew(-12deg) translateX(-50%);
         background: rgb(236, 167, 44, 0.4);
         z-index: 0; 
@@ -1082,14 +1083,12 @@ input[type="text"]:active {
         color: #416a5a; 
         margin-bottom: 2px !important;
       }
-      
-      
+     
       .contact-form h3 {
           font-family: 'Work Sans', sans-serif;
-          margin-bottom: 10px;
-          font-size: 12px;
-          font-weight: 600;
-          height: 32px;
+          font-size: 13px;
+          font-weight: 700;
+          margin : 5px !important;
           color: #426a5a;
           text-transform: uppercase;
       }

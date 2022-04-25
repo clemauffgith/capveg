@@ -984,7 +984,7 @@ input[type="text"]:active {
           font-family: 'Work Sans', sans-serif;
           font-weight: 800;
           color: #426a5a;
-          font-size: 11px;
+          font-size: 12px;
           margin-top: 10px;
           margin-bottom: 5px;
       }
@@ -1041,6 +1041,23 @@ input[type="text"]:active {
         padding-bottom: 4px;
         display: inline;
         font-size: 13px !important; 
+      }
+  
+        #divPriceTotal label {
+        position: relative;
+        font-size: 14px;
+      }
+
+      #divPriceTotal label::before {
+        content: "";
+        position: absolute;
+        left: 65px;
+        bottom: -5px;
+        width: 135px;
+        height: 12px;
+        transform: skew(-12deg) translateX(-50%);
+        background: rgb(236, 167, 44, 0.4);
+        z-index: 0; 
       }
  
       /* style du formulaire de contact */ 

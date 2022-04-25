@@ -884,14 +884,10 @@ input[type="text"]:active {
           padding-bottom: 100px;
           padding-top: 20px;
           background-color: #416a5a;
-          padding-left: 2%;
-          padding-right: 2%;
       }
 
       #theForm {
         display: block;
-        margin-right: 2%;
-        margin-left: 2%;
     }
 
       .choice-row {
@@ -985,7 +981,7 @@ input[type="text"]:active {
           font-family: 'Work Sans', sans-serif;
           font-weight: 800;
           color: #426a5a;
-          font-size: 12px;
+          font-size: 13px;
           margin-top: 10px;
           margin-bottom: 5px;
       }
@@ -1087,6 +1083,7 @@ input[type="text"]:active {
         font-family: 'Work Sans'; 
         color: #416a5a; 
         margin-bottom: 0px !important;
+        margin-top: 5px; 
       }
      
       .contact-form h3 {
@@ -1166,9 +1163,10 @@ input[type="text"]:active {
          input[type="text"] {
                   border: 1px solid #E5E6E5;
                   font-family: 'Open Sans', sans-serif;
-                  height: 28px;
+                  height: 30px;
                   font-size: 13px;
                   border-radius: 6px;
+                  margin-bottom: 5px; 
               }	
           
           #wrap input[type="text"]:focus {
@@ -1204,7 +1202,7 @@ input[type="text"]:active {
        width: 25px;
        height: 30px;
        padding: 0 5px;
-       font-size: 12px;
+       font-size: 13px;
        font-family: 'Work Sans', sans-serif;
        text-align: center;
        background-color: transparent;

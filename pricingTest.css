@@ -1166,8 +1166,8 @@ input[type="text"]:active {
          input[type="text"] {
                   border: 1px solid #E5E6E5;
                   font-family: 'Open Sans', sans-serif;
-                  height: 30px;
-                  font-size: 13px;
+                  height: 34px;
+                  font-size: 14px;
                   border-radius: 6px;
                   margin-bottom: 13px; 
                   width: 80%; 

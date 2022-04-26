@@ -1106,10 +1106,10 @@ input[type="text"]:active {
       #wrap label.radiolabelOffer, #wrap label.radiolabelPots
           {
             width: 70% !important;
-            height: 35px;
+            height: 38px;
             text-align: center;
             font-family: 'Work Sans', sans-serif;
-            font-size: 12px;
+            font-size: 13px;
             padding-top: 10px;
             text-transform: uppercase;
             letter-spacing: 0.1px;

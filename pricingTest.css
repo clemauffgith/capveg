@@ -978,7 +978,7 @@ input[type="text"]:active {
           font-weight: 800;
           color: #426a5a;
           font-size: 13px;
-          margin-top: 10px;
+          margin-top: 14px;
           margin-bottom: 5px;
       }
       
@@ -1005,7 +1005,7 @@ input[type="text"]:active {
       
       .total-numbers input {
         width: 15%;
-        font-size: 13px;
+        font-size: 14px;
         border: none;
         background: transparent;
         padding-bottom: 3px;
@@ -1169,7 +1169,7 @@ input[type="text"]:active {
                   height: 30px;
                   font-size: 13px;
                   border-radius: 6px;
-                  margin-bottom: 5px; 
+                  margin-bottom: 13px; 
                   width: 80%; 
               }	
           

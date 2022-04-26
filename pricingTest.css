@@ -993,7 +993,7 @@ input[type="text"]:active {
       /* style box nombres */ 
       .total-numbers {
         width: 100%;
-        padding-top: 20px;
+        padding-top: 30px;
         padding-left: 10%; 
         padding-bottom: 20px; 
         margin-top: 20px;
@@ -1150,6 +1150,7 @@ input[type="text"]:active {
               cursor: pointer;
               width: 30%;
               margin-top: 15px; 
+              margin-bottom: 10px;
           }
       
        /* style inputs offres et pots */  

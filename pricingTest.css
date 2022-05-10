@@ -510,22 +510,15 @@ input[type="text"]:active {
       font-size: 1em;
   }
 
-      .choice-row {
+    .choice-row {
           display: flex;
           flex-direction: row;
-          margin-bottom: 20px;
       }
     
     .buttonsOffer {
         align-items: center;
     }
       
-/*       
-      #pricingPlantes {
-          font-family:'Open Sans', sans-serif;
-          justify-content: space-between;
-      } 
-       */
       
       /* style boxes choix des offres + choix nbre plantes */ 
       .choice-boxes, .choice-plants {
@@ -702,37 +695,36 @@ input[type="text"]:active {
     
       
       /* style label des boutons radios offre & Pots */ 
-      
-      #wrap label.radiolabelOffer, #wrap label.radiolabelPots
-          {
-              cursor: pointer;
-              font-family: 'Work Sans',sans-serif;
-              font-weight: 600;
-              display:inline;
-              margin-left: 30px;
-              margin-right: 30px;
-              border: 1px solid #416a5a;
-              padding-right: 18px;
-              padding-top: 12px;
-              padding-left: 18px;
-              background-color: white;
-              color: #416a5a;
-              padding-bottom: 15px;
-              align-items: center;
-              border-radius: 20px;
-              box-sizing: border-box;    
-              font-weight: 600;
-              font-size: 11px;
-              display: flex;
-              justify-content: center;
-              line-height: 15px;
-              height: 42px;
-              position: relative;
-              text-align: center;
-              text-decoration: none;
-              user-select: none;
-              -webkit-user-select: none;
-          }  
+ #wrap label.radiolabelOffer, #wrap label.radiolabelPots
+      {
+          width: 190px;
+          height: 45px;
+          text-align: center;
+          font-family: 'Work Sans', sans-serif;
+          font-size: 13px;
+          padding-left: 5px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-right: 5px;
+          text-transform: uppercase;
+          letter-spacing: 0.1px;
+          font-weight: 550;
+          color: #416a5a;
+          background-color: #fff;
+          border: none;
+          border-radius: 45px;
+          box-shadow: 0px 8px 15px rgba(0, 100, 30, 0.459);
+          transition: all 0.3s ease 0s;
+          cursor: pointer;
+          outline: none;
+      }  
+
+      #wrap label.radiolabelOffer:hover, #wrap label.radiolabelPots:hover {
+        background-color: #2EE59D;
+        box-shadow: 0px 15px 20px rgba(65, 106, 90, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+      }
       
           #wrap .button-56 {
               width: 50%; 

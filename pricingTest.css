@@ -478,7 +478,7 @@ input[type="text"]:active {
 
 
 /* Version pour tablets et Ipad en mode portrait HD */ 
-@media (min-width: 767px) and (max-width: 1023px) {
+@media (min-width: 767px) and (max-width: 1022px) {
     #wrap{
         font-family:'Open Sans', sans-serif;
           padding-bottom: 100px;

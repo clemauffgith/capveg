@@ -376,6 +376,7 @@ function afterSubmit(e) {
   })
   .catch(err => {
       console.log(err);
+      finalForm.reset();
       contactForm.reset();
       console.log('something went wrong ....');
   });

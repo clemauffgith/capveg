@@ -228,7 +228,7 @@
   }
 
   .total-numbers input::after {
-    content: " \20ac";
+    content: "\20ac";
   }
 
   
@@ -541,7 +541,7 @@ input[type="text"]:active {
           padding-left: 5px;
           font-family: 'Work Sans', sans-serif;
           margin-bottom: 10px;
-          font-size: 12px;
+          font-size: 15px;
           font-weight: 800;
           height: 32px;
           color: #426a5a;
@@ -567,7 +567,7 @@ input[type="text"]:active {
           padding-left: 5px;
           font-family: 'Work Sans', sans-serif;
           margin-bottom: 40px;
-          font-size: 12px;
+          font-size: 15px;
           font-weight: 800;
           height: 32px;
           color: #426a5a;
@@ -578,10 +578,11 @@ input[type="text"]:active {
       }
       
       .choice-plants label {
-          font-size: 12px;
+          font-size: 14px;
         font-family: 'Work Sans', sans-serif;
         font-weight: normal;
           margin-right: 5px;
+          color: #426a5a;
       }
       
       .choice-plants .inputQty {
@@ -626,10 +627,11 @@ input[type="text"]:active {
       .total-numbers input {
         height: 20px;	
         width: 30px;
-        font-size: 14px;
+        font-size: 14.5px;
         border: none;
         background: transparent;
         padding-bottom: 3px;
+        color: #426a5a;
         font-family: 'Work Sans', sans-serif;
       }
 
@@ -645,7 +647,7 @@ input[type="text"]:active {
           font-family: 'Work Sans', sans-serif;
           font-weight: 800;
           color: #426a5a;
-          font-size: 13px;
+          font-size: 14px;
           margin-right: 5px;
           line-height: 12px;
       }
@@ -657,7 +659,15 @@ input[type="text"]:active {
 
       .divTotalTypes {
         margin-top: 20px;
+        display: flex; 
       }
+  
+    .divTotalTypes label {
+    position: relative;
+    border-bottom: 3px solid #f9dd94;
+    padding-bottom: 4px;
+    display: inline;
+  }
       
       /* style du formulaire de contact */ 
       .contact-form {

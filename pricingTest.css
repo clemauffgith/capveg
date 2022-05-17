@@ -484,12 +484,11 @@ input[type="text"]:active {
           padding-bottom: 100px;
           padding-top: 40px;
           background-color: #416a5a;
+          width : 790px;
       }
 
       #theForm {
         display: block;
-        margin-right: 3%;
-        margin-left: 3%;
     }
 
     body.swal2-popup {
@@ -541,7 +540,7 @@ input[type="text"]:active {
           padding-left: 5px;
           font-family: 'Work Sans', sans-serif;
           margin-bottom: 10px;
-          font-size: 15px;
+          font-size: 14px;
           font-weight: 800;
           height: 32px;
           color: #426a5a;
@@ -567,8 +566,9 @@ input[type="text"]:active {
           padding-left: 5px;
           font-family: 'Work Sans', sans-serif;
           margin-bottom: 40px;
-          font-size: 15px;
+          font-size: 14px;
           font-weight: 800;
+          line-height: 25px !important; 
           height: 32px;
           color: #426a5a;
       }
@@ -607,7 +607,7 @@ input[type="text"]:active {
       }
 
       .choixPlantes {
-        padding-left: 2px;
+        padding-left: 5%;
       }
       
       
@@ -615,7 +615,7 @@ input[type="text"]:active {
       /* style box nombres */ 
       .total-numbers {
           width: 48%;
-          padding-left : 20px;
+          padding-left : 4%;
           padding-top: 30px;
           padding-right: 65px;
           font-family: 'Work Sans', sans-serif;
@@ -647,7 +647,7 @@ input[type="text"]:active {
           font-family: 'Work Sans', sans-serif;
           font-weight: 800;
           color: #426a5a;
-          font-size: 14px;
+          font-size: 13.5px;
           margin-right: 5px;
           line-height: 12px;
       }
@@ -703,18 +703,21 @@ input[type="text"]:active {
           text-transform: uppercase;
       }
     
+  .buttonsOffer {
+    padding-left: 0px !important; 
+  }
       
       /* style label des boutons radios offre & Pots */ 
  #wrap label.radiolabelOffer, #wrap label.radiolabelPots
       {
           width: 190px;
-          height: 45px;
+          height: 39px;
           text-align: center;
           font-family: 'Work Sans', sans-serif;
-          font-size: 13px;
+          font-size: 11px;
           padding-left: 5px;
-          padding-top: 10px;
-          padding-bottom: 10px;
+          padding-top: 8px;
+          padding-bottom: 8px;
           padding-right: 5px;
           text-transform: uppercase;
           letter-spacing: 0.1px;

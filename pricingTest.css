@@ -207,7 +207,7 @@
   
   /* style box nombres */ 
   .total-numbers {
-    width: 47%;
+    width: 46%;
       padding-left: 40px;
       padding-top: 20px;     
       font-family: 'Work Sans', sans-serif;
@@ -299,7 +299,7 @@
   
   .contact-form label {
     font-size: 15px;
-    letter-spacing: 1px;
+    letter-spacing: 0.1px;
     font-weight: 600; 
     font-family: 'Work Sans'; 
     color: #416a5a; 
@@ -364,6 +364,7 @@
           color: white;
           border: none;
           cursor: pointer;
+        font-weight: 600; 
       }
   
    /* style inputs offres et pots */  
@@ -567,7 +568,7 @@ input[type="text"]:active {
       }
 
       .choice-plants h3 {
-          padding-left: 5px;
+          padding-left: 20px;
           font-family: 'Work Sans', sans-serif;
           margin-bottom: 40px;
           font-size: 14px;
@@ -675,7 +676,7 @@ input[type="text"]:active {
       
       /* style du formulaire de contact */ 
       .contact-form {
-        width: 95%;
+        width: 98%;
           padding : 30px;
           background-color: white;
           border-radius: 20px;

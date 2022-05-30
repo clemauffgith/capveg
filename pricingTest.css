@@ -510,6 +510,77 @@ input[type="text"]:active {
       color: #fff;
       font-size: 1em;
   }
+  
+  :root {
+    --surface-color: #ACECA1;
+    --curve: 40;
+  }
+
+  .swal2-popup {
+    font-family: 'Open Sans' !important;
+  }
+
+  .bi-info-circle-fill:hover {
+    color: black;
+  }
+  /* style du contact Form  */
+  #testForm legend {
+    padding: 10px;      
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #426a5a;
+    }
+    #testForm .testbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 20px;
+    }
+  
+    #testForm input {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    }
+    #testForm input {
+    width: calc(90% - 10px);
+    padding: 5px;
+    }
+    #testForm .item input:hover{
+    border: 1px solid transparent;
+    box-shadow: 0 0 3px 0  #426a5a;
+    color: #006622;
+    }
+    #testForm .item {
+    position: relative;
+    margin: 10px 0;
+    }
+    #testForm .item span {
+    color: red;
+    }
+    #testForm .colums {
+    display:flex;
+    padding-left: 30px;
+    justify-content:space-between;
+    flex-direction:row;
+    flex-wrap:wrap;
+    }
+    #testForm .colums div {
+    width:48%;
+    }
+    #testForm .flax {
+    display:flex;
+    justify-content:space-around;
+    }
+    #testForm .btn-block {
+    margin-top: 10px;
+    text-align: center;
+    }
+    .item label {
+        margin-bottom: 50px;
+    }
 
     .choice-row {
           display: flex;

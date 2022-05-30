@@ -1236,7 +1236,7 @@ input[type="text"]:active {
 }
   
 /* Version mobile max width 480px */ 
-@media all and (max-width: 480px) {
+@media all and (max-width: 321px) {
     #wrap{
         font-family:'Open Sans', sans-serif;
           padding-bottom: 100px;
@@ -1281,7 +1281,6 @@ input[type="text"]:active {
       }
       
       .choice-boxes h3, .choice-plants h3 {
-          padding-left: 5px;
           font-family: 'Work Sans', sans-serif;
           font-size: 14px;
           margin-top: 0px !important;
@@ -1343,10 +1342,7 @@ input[type="text"]:active {
       .choice-plants .inputRow {
           display:flex; flex-direction: row; align-items: center;
       }
-  
-      .choixPlantes {
-        padding-left: 5%;
-      }
+ 
       
       /* style box nombres */ 
       .total-numbers {
@@ -1618,3 +1614,385 @@ input[type="text"]:active {
 
 }
 
+/* Version mobile max width 480px */ 
+@media all and (max-width: 480px) {
+    #wrap{
+        font-family:'Open Sans', sans-serif;
+          padding-bottom: 100px;
+          padding-top: 20px;
+          background-color: #416a5a;
+      }
+
+      #theForm {
+        display: block;
+    }
+
+      .choice-row {
+          display: flex;
+          flex-direction: column;
+      }
+      
+      #pricingPlantes {
+          font-family:'Open Sans', sans-serif;
+          justify-content: space-between;
+      }
+      
+      
+      /* style boxes choix des offres + choix nbre plantes */ 
+      .choice-boxes, .choice-plants {
+          width: 100%;
+          font-family: 'Work Sans', sans-serif;
+          padding: 5%;
+          border-radius: 20px;
+          background-color: white;
+          box-shadow: 1px 1px 8px 0 #ebecf0;
+          justify-content: center;
+      }
+
+      .buttonsOffer {
+          display:flex;
+          flex-direction: column;
+      }
+
+      .infoRow {
+          display: flex;
+          flex-direction: column;
+      }
+      
+      .choice-boxes h3, .choice-plants h3 {
+          padding-left: 5px;
+          font-family: 'Work Sans', sans-serif;
+          font-size: 13px;
+          margin-top: 0px !important;
+          font-weight: 700;
+          color: #426a5a;
+          line-height: 18px !important;
+          padding-top: 10px; 
+          margin-bottom: 5px;
+      }
+      
+      .choice-boxes:hover, .choice-plants:hover {
+          transform: translateY(-6px);
+          transition: all 0.5s;
+      }
+      
+      /* choix nbre de plantes */
+      .choice-plants .inputUPots {
+        border: none;
+        background: transparent;
+        font-size: 13.5px;
+        font-family: 'Work Sans', sans-serif;
+        width: 30px;
+        margin-right: 4px;
+        padding-bottom: 6%;
+        color: #416a5a; 
+        font-weight: 600; 
+      }
+
+      .choice-plants .plantsRow {
+          display:flex; flex-direction: row;align-items: center;
+      }
+      
+      .choice-plants label {
+          font-size: 12px;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: normal;
+          margin-right: 4px;
+        color: #416a5a; 
+      }
+      
+      /* .choice-plants .inputQty {
+          border: 1px solid #E5E6E5;
+          border-radius: 5px;
+          font-family: 'Work Sans', sans-serif;
+          font-size: 15px;
+          height: 28px;
+          width: 4px;
+      } */
+      
+      .choice-plants h5 {
+          font-family: 'Work Sans', sans-serif;
+          font-weight: 800;
+          color: #426a5a;
+          font-size: 13px;
+          margin-top: 14px;
+          margin-bottom: 5px;
+      }
+      
+      .choice-plants .inputRow {
+          display:flex; flex-direction: row; align-items: center;
+      }
+  
+      .choixPlantes {
+        padding-left: 5%;
+      }
+      
+      /* style box nombres */ 
+      .total-numbers {
+        width: 100%;
+        padding-top: 30px;
+        padding-left: 10%; 
+        padding-bottom: 20px; 
+        margin-top: 20px;
+        font-family: 'Work Sans', sans-serif;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 1px 1px 5px 0 #ebecf0;    
+      }
+      
+      .total-numbers input {
+        width: 15%;
+        font-size: 14px;
+        border: none;
+        background: transparent;
+        padding-bottom: 3px;
+        font-family: 'Work Sans', sans-serif;
+        color: #416a5a; 
+      }
+      
+      .total-numbers label {
+          font-family: 'Work Sans', sans-serif;
+          font-weight: 800;
+          color: #426a5a;
+          font-size: 12px;
+          margin-right: 5px;
+          margin-bottom: 15px;
+      }
+      
+      .total-numbers:hover {
+          transform: translateY(-6px);
+          transition: all 0.5s;
+      }
+
+      .divTotalTypes {
+        display: block !important; 
+        align-items: center; 
+        margin-bottom: 20px;
+      }
+  
+      .divTotalTypes label {
+        position: relative;
+        border-bottom: 3px solid #f9dd94;
+        padding-bottom: 4px;
+        display: inline;
+        font-size: 13px !important; 
+      }
+  
+        #divPriceTotal label {
+        position: relative;
+        font-size: 16px;
+      }
+  
+  #divPriceTotal input {
+       font-size: 16px;
+       font-weight: 700;
+       padding-bottom: 5%;
+  }
+
+      #divPriceTotal label::before {
+        content: "";
+        position: absolute;
+        left: 45px;
+        bottom: -4px;
+        width: 90px;
+        height: 8px;
+        transform: skew(-12deg) translateX(-50%);
+        background: rgb(236, 167, 44, 0.4);
+        z-index: 0; 
+      }
+ 
+      /* style du formulaire de contact */ 
+      .contact-form {
+        width: 100%;
+          padding : 5%;
+          background-color: white;
+          border-radius: 20px;
+          box-shadow: 1px 1px 5px 0 #ebecf0;
+          margin-top: 20px;
+      }
+      
+      .contact-form:hover {
+          transform: translateY(-6px);
+          transition: all 0.5s;
+      }
+
+      .contact-form label {
+        font-size: 13px;
+        font-weight: 600; 
+        font-family: 'Work Sans'; 
+        color: #416a5a; 
+        margin-bottom: 0px !important;
+        margin-top: 5px; 
+      }
+     
+      .contact-form h3 {
+          font-family: 'Work Sans', sans-serif;
+          font-size: 14px;
+          font-weight: 700;
+          margin : 5px !important;
+          color: #426a5a;
+          text-transform: uppercase;
+      }
+  
+      #testForm {
+          padding-left: 8%; 
+      }
+
+      /* style label des boutons radios offre & Pots */ 
+      
+      #wrap label.radiolabelOffer, #wrap label.radiolabelPots
+          {
+            width: 70% !important;
+            height: 38px;
+            text-align: center;
+            font-family: 'Work Sans', sans-serif;
+            font-size: 11px;
+            padding-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.1px;
+            font-weight: 550;
+            color: #416a5a;
+            background-color: #fff;
+            border: none;
+            border-radius: 45px;
+            box-shadow: 0px 8px 15px rgba(0, 100, 30, 0.459);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+          }  
+  
+  #wrap label.radiolabelOffer:hover, #wrap label.radiolabelPots:hover {
+        background-color: #2EE59D;
+        box-shadow: 0px 15px 20px rgba(65, 106, 90, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+      }
+
+           #wrap .buttonsOffer {
+              flex-direction: column !important; 
+             align-items: center !important; 
+             padding-left: 0px !important; 
+          }
+  
+          #wrap .button-56 {
+              background-color: #eca72c;
+              font-family: 'Work Sans', sans-serif;
+              font-weight: 600;
+              font-size: 12px;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              border-radius: 6px;
+              color: white;
+              border: none;
+              cursor: pointer;
+              width: 30%;
+              margin-top: 15px; 
+              margin-bottom: 10px;
+          }
+      
+       /* style inputs offres et pots */  
+        input[type="radio"] {
+          visibility: hidden;
+      }
+      
+        #wrap input[type="radio"]:checked+label {
+          background-color: #63cf99; 
+          color: white;
+          }  
+      
+      
+         input[type="text"] {
+                  border: 1px solid #E5E6E5;
+                  font-family: 'Open Sans', sans-serif;
+                  height: 34px;
+                  font-size: 14px;
+                  border-radius: 6px;
+                  margin-bottom: 13px; 
+                  width: 80%; 
+              }	
+          
+          #wrap input[type="text"]:focus {
+              outline:none !important;
+              border-bottom: 2px solid #63cf99;
+              color: #63cf99;
+              font-size: 13px; 
+          }	
+      
+      
+      #wrap div#totalPrice
+      {
+          font-weight:bold;
+      }
+      
+      
+      /* CSS submit button */
+      .button-56:active {
+        background-color: #ffdeda;
+        outline: 0;
+      }
+      
+      .button-56:hover {
+        outline: 0;
+      }
+      
+      /* -- quantity box -- */
+      
+      .quantity {
+       display: inline-block; }
+      
+      .quantity .input-text.qty {
+       width: 25px;
+       height: 30px;
+       padding: 0 5px;
+       font-size: 13px;
+       font-family: 'Work Sans', sans-serif;
+       text-align: center;
+       background-color: transparent;
+       border: 1px solid #efefef;
+       color: #416a5a; 
+      }
+      
+      .quantity.buttons_added {
+       text-align: left;
+       position: relative;
+       white-space: nowrap;
+       vertical-align: top; }
+      
+      .quantity.buttons_added input {
+       display: inline-block;
+       margin: 0;
+       vertical-align: top;
+       box-shadow: none;
+      }
+      
+      .quantity.buttons_added .minus,
+      .quantity.buttons_added .plus {
+       padding: 0 5px;
+       height: 30px;
+       background-color: #ffffff;
+       border: 1px solid #efefef;
+       cursor:pointer;
+        color: #416a5a; 
+  }
+      
+      .quantity.buttons_added .minus {
+       border-right: 0; }
+      
+      .quantity.buttons_added .plus {
+       border-left: 0; }
+      
+      .quantity.buttons_added .minus:hover,
+      .quantity.buttons_added .plus:hover {
+       background: #eeeeee; }
+      
+      .quantity input::-webkit-outer-spin-button,
+      .quantity input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+       -moz-appearance: none;
+       margin: 0; }
+       
+       .quantity.buttons_added .minus:focus,
+      .quantity.buttons_added .plus:focus {
+       outline: none; }
+
+}

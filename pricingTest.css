@@ -1667,7 +1667,7 @@ input[type="text"]:active {
       
       .choice-boxes h3, .choice-plants h3 {
           font-family: 'Work Sans', sans-serif;
-          font-size: 14px;
+          font-size: 13px;
           margin-top: 0px !important;
           font-weight: 700;
           color: #426a5a;
@@ -1829,7 +1829,7 @@ input[type="text"]:active {
      
       .contact-form h3 {
           font-family: 'Work Sans', sans-serif;
-          font-size: 14px;
+          font-size: 13px;
           font-weight: 700;
           margin : 5px !important;
           color: #426a5a;
@@ -1848,7 +1848,7 @@ input[type="text"]:active {
             height: 38px;
             text-align: center;
             font-family: 'Work Sans', sans-serif;
-            font-size: 13px;
+            font-size: 11px;
             padding-top: 10px;
             text-transform: uppercase;
             letter-spacing: 0.1px;
@@ -1945,7 +1945,7 @@ input[type="text"]:active {
       .quantity .input-text.qty {
        width: 25px;
        height: 30px;
-       padding: 0 5px;
+       padding: 0 4px;
        font-size: 13px;
        font-family: 'Work Sans', sans-serif;
        text-align: center;
